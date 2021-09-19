@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Register Template</title>
+    <title>Starbucks Signup Page</title>
 
     <link
       href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
@@ -142,23 +142,31 @@
 
             <div class="flex flex-col pt-4">
               <label for="Gender" class="text-lg">Gender</label>
-              <input type="radio" id="html" name="fav_language" value="HTML" />
-              <label for="html">HTML</label><br />
-              <input type="radio" id="css" name="fav_language" value="CSS" />
-              <label for="css">CSS</label><br />
-              <input
-                type="radio"
-                id="javascript"
-                name="fav_language"
-                value="JavaScript"
-              />
-              <label for="javascript">JavaScript</label>
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                  <input type="radio" id="MALE" name="Gender" value="MALE" checked aria-checked="checked"/>
+                  <label for="html">MALE</label><br />
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="FEMALE"
+                    name="Gender"
+                    value="FEMALE"
+                  />
+                  <label for="FEMALE">FEMALE</label><br />
+                </div>
+                <div>
+                  <input type="radio" id="OTHER" name="Gender" value="OTHER" />
+                  <label for="OTHER">OTHER</label>
+                </div>
+              </div>
             </div>
 
             <div class="flex flex-col pt-4">
               <label for="mobile-number" class="text-lg">Mobile Number</label>
               <input
-                type="number"
+                type="text"
                 id="mobile-number"
                 placeholder="Mobile Number"
                 class="
